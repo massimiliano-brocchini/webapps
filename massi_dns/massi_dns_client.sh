@@ -3,6 +3,8 @@
 PATH=/usr/local/sbin:/usr/local/bin:/usr/bin
 URL=
 
+cd ${0%/*}
+
 ip=$(curl http://$URL/myip.php)
 last_ip=$(<last_update)
 
